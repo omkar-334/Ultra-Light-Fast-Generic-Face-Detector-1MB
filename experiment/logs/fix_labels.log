@@ -1,0 +1,44 @@
+Generating train split:   0%|          | 0/1546 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 1546/1546 [00:00<00:00, 28304.76 examples/s]
+Casting the dataset:   0%|          | 0/1546 [00:00<?, ? examples/s]Casting the dataset: 100%|██████████| 1546/1546 [00:00<00:00, 94944.05 examples/s]
+Casting the dataset:   0%|          | 0/1546 [00:00<?, ? examples/s]Casting the dataset: 100%|██████████| 1546/1546 [00:00<00:00, 123385.36 examples/s]
+Setting num_proc from 1 back to 1 for the train split to disable multiprocessing as it only contains one shard.
+Names: ['face_present', 'no_face', 'looking_away', 'corrupted', 'camera_off', 'ambiguous', 'occluded_face']
+Num labels: 7
+  face_present: 971
+  no_face: 129
+  looking_away: 221
+  corrupted: 23
+  camera_off: 5
+  ambiguous: 18
+  occluded_face: 179
+Uploading the dataset shards:   0%|          | 0/1 [00:00<?, ? shards/s]
+Map:   0%|          | 0/1546 [00:00<?, ? examples/s][AMap: 100%|██████████| 1546/1546 [00:00<00:00, 26712.12 examples/s]
+
+Creating parquet from Arrow format:   0%|          | 0/1 [00:00<?, ?ba/s][ACreating parquet from Arrow format: 100%|██████████| 1/1 [00:00<00:00, 45.03ba/s]
+Processing Files (0 / 0)      : |          |  0.00B /  0.00B            
+New Data Upload               : |          |  0.00B /  0.00B            [A
+
+  ...0gp/T/tmpx_otk0pg.parquet: 100%|██████████| 38.3MB / 38.3MB            [A[A
+
+  ...0gp/T/tmpx_otk0pg.parquet: 100%|██████████| 38.3MB / 38.3MB            [A[AProcessing Files (1 / 1)      : 100%|██████████| 38.3MB / 38.3MB,   ???B/s  
+
+  ...0gp/T/tmpx_otk0pg.parquet: 100%|██████████| 38.3MB / 38.3MB            [A[A
+
+  ...0gp/T/tmpx_otk0pg.parquet: 100%|██████████| 38.3MB / 38.3MB            [A[A
+
+  ...0gp/T/tmpx_otk0pg.parquet: 100%|██████████| 38.3MB / 38.3MB            [A[A
+
+  ...0gp/T/tmpx_otk0pg.parquet: 100%|██████████| 38.3MB / 38.3MB            [A[A
+
+  ...0gp/T/tmpx_otk0pg.parquet: 100%|██████████| 38.3MB / 38.3MB            [A[A
+
+  ...0gp/T/tmpx_otk0pg.parquet: 100%|██████████| 38.3MB / 38.3MB            [A[A
+
+  ...0gp/T/tmpx_otk0pg.parquet: 100%|██████████| 38.3MB / 38.3MB            [A[A
+
+  ...0gp/T/tmpx_otk0pg.parquet: 100%|██████████| 38.3MB / 38.3MB            [A[AProcessing Files (1 / 1)      : 100%|██████████| 38.3MB / 38.3MB,  0.00B/s  
+New Data Upload               : |          |  0.00B /  0.00B,  0.00B/s  
+  ...0gp/T/tmpx_otk0pg.parquet: 100%|██████████| 38.3MB / 38.3MB            
+Uploading the dataset shards: 100%|██████████| 1/1 [00:02<00:00,  2.80s/ shards]Uploading the dataset shards: 100%|██████████| 1/1 [00:02<00:00,  2.80s/ shards]
+No files have been modified since last commit. Skipping to prevent empty commit.
+Done!

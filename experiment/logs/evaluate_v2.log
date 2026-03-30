@@ -1,0 +1,162 @@
+Device: mps
+Loading dataset from HuggingFace...
+Generating train split:   0%|          | 0/1546 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 1546/1546 [00:00<00:00, 28024.02 examples/s]
+Loaded 1546 images, labels: ['face_present', 'no_face', 'looking_away', 'corrupted', 'camera_off', 'ambiguous', 'occluded_face']
+
+--- Loading slim-320 ---
+priors nums:4420
+Running inference on 1546 images...
+  [200/1546] avg inference: 5.4ms
+  [400/1546] avg inference: 4.6ms
+  [600/1546] avg inference: 4.7ms
+  [800/1546] avg inference: 4.5ms
+  [1000/1546] avg inference: 4.6ms
+  [1200/1546] avg inference: 4.5ms
+  [1400/1546] avg inference: 4.5ms
+
+============================================================
+Model: slim-320 | Threshold: 0.6
+============================================================
+
+Binary Classification: face_present vs no_face
+  Accuracy:    0.5524
+  Precision:   0.8730  (of predicted faces, how many are correct)
+  Recall:      0.4661  (of actual faces, how many are detected)
+  F1 Score:    0.6077
+  Specificity: 0.8030  (of actual no-face, how many are caught)
+
+Confusion Matrix:
+  TP=536  FP=78
+  FN=614  TN=318
+
+Per-class face detection rate:
+  face_present                               467/ 971  (48.1%)
+  no_face                                      2/ 129  (1.6%)
+  looking_away                                74/ 221  (33.5%)
+  corrupted                                    0/  23  (0.0%)
+  camera_off                                   0/   5  (0.0%)
+  ambiguous                                    2/  18  (11.1%)
+  occluded_face                               69/ 179  (38.5%)
+
+Inference Speed:
+  Mean: 4.7ms | P50: 4.6ms | P95: 5.5ms
+  FPS:  214.0
+
+--- Loading slim-640 ---
+priors nums:17640
+Running inference on 1546 images...
+  [200/1546] avg inference: 6.9ms
+  [400/1546] avg inference: 6.5ms
+  [600/1546] avg inference: 6.1ms
+  [800/1546] avg inference: 5.4ms
+  [1000/1546] avg inference: 6.4ms
+  [1200/1546] avg inference: 6.5ms
+  [1400/1546] avg inference: 6.3ms
+
+============================================================
+Model: slim-640 | Threshold: 0.6
+============================================================
+
+Binary Classification: face_present vs no_face
+  Accuracy:    0.5537
+  Precision:   0.8795  (of predicted faces, how many are correct)
+  Recall:      0.4635  (of actual faces, how many are detected)
+  F1 Score:    0.6071
+  Specificity: 0.8157  (of actual no-face, how many are caught)
+
+Confusion Matrix:
+  TP=533  FP=73
+  FN=617  TN=323
+
+Per-class face detection rate:
+  face_present                               465/ 971  (47.9%)
+  no_face                                      1/ 129  (0.8%)
+  looking_away                                70/ 221  (31.7%)
+  corrupted                                    0/  23  (0.0%)
+  camera_off                                   0/   5  (0.0%)
+  ambiguous                                    2/  18  (11.1%)
+  occluded_face                               68/ 179  (38.0%)
+
+Inference Speed:
+  Mean: 6.3ms | P50: 5.7ms | P95: 8.9ms
+  FPS:  158.1
+
+--- Loading RFB-320 ---
+priors nums:4420
+Running inference on 1546 images...
+  [200/1546] avg inference: 5.4ms
+  [400/1546] avg inference: 5.1ms
+  [600/1546] avg inference: 5.3ms
+  [800/1546] avg inference: 5.1ms
+  [1000/1546] avg inference: 5.3ms
+  [1200/1546] avg inference: 5.2ms
+  [1400/1546] avg inference: 5.4ms
+
+============================================================
+Model: RFB-320 | Threshold: 0.6
+============================================================
+
+Binary Classification: face_present vs no_face
+  Accuracy:    0.5744
+  Precision:   0.8683  (of predicted faces, how many are correct)
+  Recall:      0.5043  (of actual faces, how many are detected)
+  F1 Score:    0.6381
+  Specificity: 0.7778  (of actual no-face, how many are caught)
+
+Confusion Matrix:
+  TP=580  FP=88
+  FN=570  TN=308
+
+Per-class face detection rate:
+  face_present                               494/ 971  (50.9%)
+  no_face                                      3/ 129  (2.3%)
+  looking_away                                83/ 221  (37.6%)
+  corrupted                                    0/  23  (0.0%)
+  camera_off                                   0/   5  (0.0%)
+  ambiguous                                    2/  18  (11.1%)
+  occluded_face                               86/ 179  (48.0%)
+
+Inference Speed:
+  Mean: 5.3ms | P50: 5.1ms | P95: 6.0ms
+  FPS:  190.3
+
+--- Loading RFB-640 ---
+priors nums:17640
+Running inference on 1546 images...
+  [200/1546] avg inference: 7.4ms
+  [400/1546] avg inference: 6.5ms
+  [600/1546] avg inference: 7.2ms
+  [800/1546] avg inference: 7.3ms
+  [1000/1546] avg inference: 7.2ms
+  [1200/1546] avg inference: 7.3ms
+  [1400/1546] avg inference: 7.1ms
+
+============================================================
+Model: RFB-640 | Threshold: 0.6
+============================================================
+
+Binary Classification: face_present vs no_face
+  Accuracy:    0.5291
+  Precision:   0.8715  (of predicted faces, how many are correct)
+  Recall:      0.4304  (of actual faces, how many are detected)
+  F1 Score:    0.5763
+  Specificity: 0.8157  (of actual no-face, how many are caught)
+
+Confusion Matrix:
+  TP=495  FP=73
+  FN=655  TN=323
+
+Per-class face detection rate:
+  face_present                               426/ 971  (43.9%)
+  no_face                                      2/ 129  (1.6%)
+  looking_away                                69/ 221  (31.2%)
+  corrupted                                    0/  23  (0.0%)
+  camera_off                                   0/   5  (0.0%)
+  ambiguous                                    2/  18  (11.1%)
+  occluded_face                               69/ 179  (38.5%)
+
+Inference Speed:
+  Mean: 7.1ms | P50: 7.2ms | P95: 8.9ms
+  FPS:  140.0
+
+Results saved to experiment/logs/results_v2.json
