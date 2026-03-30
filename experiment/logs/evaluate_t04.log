@@ -1,0 +1,45 @@
+Device: mps
+Loading dataset from HuggingFace...
+Generating train split:   0%|          | 0/1546 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 1546/1546 [00:00<00:00, 29826.47 examples/s]
+Loaded 1546 images, labels: ['face_present', 'no_face', 'looking_away', 'corrupted', 'camera_off', 'ambiguous', 'occluded_face']
+
+--- Loading RFB-320 ---
+priors nums:4420
+Running inference on 1546 images...
+  [200/1546] avg inference: 6.4ms
+  [400/1546] avg inference: 5.2ms
+  [600/1546] avg inference: 5.2ms
+  [800/1546] avg inference: 5.0ms
+  [1000/1546] avg inference: 4.5ms
+  [1200/1546] avg inference: 5.0ms
+  [1400/1546] avg inference: 5.9ms
+
+============================================================
+Model: RFB-320 | Threshold: 0.4
+============================================================
+
+Binary Classification: face_present vs no_face
+  Accuracy:    0.5964
+  Precision:   0.8516  (of predicted faces, how many are correct)
+  Recall:      0.5539  (of actual faces, how many are detected)
+  F1 Score:    0.6712
+  Specificity: 0.7197  (of actual no-face, how many are caught)
+
+Confusion Matrix:
+  TP=637  FP=111
+  FN=513  TN=285
+
+Per-class face detection rate:
+  face_present                               542/ 971  (55.8%)
+  no_face                                      4/ 129  (3.1%)
+  looking_away                               105/ 221  (47.5%)
+  corrupted                                    0/  23  (0.0%)
+  camera_off                                   0/   5  (0.0%)
+  ambiguous                                    2/  18  (11.1%)
+  occluded_face                               95/ 179  (53.1%)
+
+Inference Speed:
+  Mean: 5.3ms | P50: 5.1ms | P95: 6.2ms
+  FPS:  188.2
+
+Results saved to experiment/logs/results_t04.json
